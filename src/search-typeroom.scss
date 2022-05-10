@@ -1,0 +1,28 @@
+body {
+    background-color: #F6F8FD;
+}
+.explore-typeroom {
+    .banner-images {
+        img {
+            width: 100%;
+            object-fit: cover;
+            max-height: 400px;
+            object-position: center;
+        }
+    }
+    .result-search {
+        .item-card {
+            padding: 0;
+            display: flex !important;
+            .images-room {
+                img {
+                    width: 100%;
+                    object-fit: contain;
+                    object-position: center;
+                    max-width: 220px;
+                    border-radius: 20px;
+                }
+            }
+        }
+    }
+}

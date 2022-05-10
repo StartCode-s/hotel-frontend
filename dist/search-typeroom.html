@@ -11,33 +11,65 @@
 
     <!--Public css-->
     <link rel="stylesheet" href="./assets/css/app.css">
-    <!--Home css-->
-    <link rel="stylesheet" href="./assets/css/home.css">
+    <!--search type room css-->
+    <link rel="stylesheet" href="./assets/css/search-typeroom.css">
 </head>
 <body>
 
-    <div id="home">
-        <!-- <nav class="navbar navbar-light bg-light">
+    <div id="main">
+        <nav class="navbar navbar-light bg-light">
             <div class="container">
-              <a class="navbar-brand" href="#">
-                <img src="./assets/images/brand-logo.png" alt="">
-                Startcode Hotel
-              </a>
-            </div>
-        </nav> -->
-
-        <div class="home-content">
-            <div class="container">
-                <div class="row d-flex align-items-center">
-                    <div class="col-12 col-lg-7 mb-5 mb-lg-0">
-                        <h1 class="text-home">Find Your Awesome Room</h1>
+                <div class="navbar-wrapper d-flex align-items-center w-100">
+                    <div class="sidebar-button d-flex align-items-center">
+                        <ion-icon name="reorder-three"></ion-icon>
                     </div>
-                    <div class="col-12 col-lg-5">
+                    <div class="brand-section d-flex justify-content-center w-100">
+                        <a class="navbar-brand" href="#">
+                            <img src="./assets/images/green-brand-logo.png" alt="">
+                            Startcode Hotel
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="sidebar-container">
+            <div class="sidebar-wrapper">
+                <div class="close-button">
+                    <ion-icon name="close"></ion-icon>
+                </div>
+                <div class="brand-logo">
+                    <img src="./assets/images/green-brand-logo.png" alt="">
+                    <h5>Startcode Hotel</h5>
+                </div>
+                <div class="sidebar-menu">
+                    <p class="text-menu">User Menu</p>
+                    <a href="#" class="sidebar-link">
+                        <img src="./assets/images/icon/booking.png" alt="">
+                        Booking Room
+                    </a>
+                    <a href="#" class="sidebar-link">
+                        <img src="./assets/images/icon/calendar.png" alt="">
+                        History
+                    </a>
+                    <p class="text-menu">Hotel Menu</p>
+                    <a href="#" class="sidebar-link">
+                        <img src="./assets/images/icon/buildings.png" alt="">
+                        Fasilitas Hotel
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content explore-typeroom">
+            <div class="banner-images">
+                <img src="./assets/images/explore-typeroom.png" alt="">
+            </div>
+
+            <div class="container result-search mt-4">
+                <div class="row">
+                    <div class="col-4">
                         <div class="card">
-                            <div class="head-card">
-                                <h5>Booking Rooms</h5>
-                                <p>booking your favorite rooms in startcode hotel</p>
-                            </div>
                             <form action="">
                                 <div class="row">
                                     <div class="col-6">
@@ -88,27 +120,55 @@
                                         </div>
                                     </div>
                                     <div class="col-12 mt-2">
-                                        <button class="button button-primary w-100">Search Now</button>
+                                        <button class="button button-primary w-100">Search Room</button>
                                     </div>
                                 </div>
                             </form>
-
-                            <div class="sign-account mt-4">
-                                <p>Want to login or register account?</p>
-                                <div class="d-flex justify-content-center">
-                                    <a href="#" class="me-2">Login</a>
-                                    <a href="#">Register</a>
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card item-card">
+                                    <div class="images-room">
+                                        <img src="./assets/images/room-images.jpg" alt="">
+                                    </div>
+                                    <div class="detail-room">
+                                        <h5 class="name-room">Deluxe Room</h5>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            
         </div>
     </div>
     
     <!--Bundle JS Bootstrap-->
     <script src="./assets/vendor/jquery/jquery.min.js"></script>
     <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!--Ion Icon-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+    <script>
+        //Sidebar
+        let sidebar = document.querySelector('.sidebar-container')
+        let menubutton = document.querySelector('.sidebar-button')
+        let mainClose = document.querySelector(".close-button")
+
+        menubutton.addEventListener('click', function(e) {
+        sidebar.classList.toggle('sidebar-active')
+        });
+
+        mainClose.addEventListener('click', function(e) {
+            sidebar.classList.remove('sidebar-active')
+        });
+    </script>
+
 </body>
 </html>

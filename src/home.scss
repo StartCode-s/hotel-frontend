@@ -15,9 +15,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-
     .home-content {
         min-height: 100vh;
+        padding: 5rem 0;
         display: flex;
         align-items: center;
         .text-home {
@@ -26,39 +26,20 @@
             font-size: 68px;
         }
         .card {
-            padding: 2.8rem 2.5rem;
-            border-radius: 12px;
-            border: none;
             .head-card {
                 margin-bottom: 2rem;
                 h5 {
                     font-weight: 600;
                     color: #112B3C;
                     margin-bottom: 4px;
+                    font-size: 28px;
                 }
                 p {
                     color: rgb(155, 148, 148);
                     font-size: 12px;
                 }
             }
-            .form-input {
-                margin-bottom: 1rem;
-                .form-label {
-                    color: rgb(155, 148, 148);
-                    font-weight: 500;
-                    font-size: 12px;
-                }
-                .form-control,.form-select {
-                    border: 1px solid #38694B;
-                    color: #38694B;
-                    border-radius: 8px;
-                    font-size: 14px;
-                    padding: .5rem .5rem;
-                    &:focus {
-                        box-shadow: none;
-                    }
-                }
-            }
+            
             .sign-account {
                 p {
                     text-align: center;

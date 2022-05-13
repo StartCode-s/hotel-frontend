@@ -1,14 +1,10 @@
-body {
-  background-color: #F6F8FD;
-}
-
 .explore-typeroom .banner-images img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   max-height: 500px;
-  -o-object-position: center;
-     object-position: center;
+  -o-object-position: bottom;
+     object-position: bottom;
 }
 
 .explore-typeroom .result-search .card {

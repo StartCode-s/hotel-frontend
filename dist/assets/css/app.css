@@ -7,6 +7,10 @@
           box-sizing: border-box;
 }
 
+body {
+  background-color: #F6F8FD;
+}
+
 .navbar {
   width: 100%;
   background-color: #fff !important;
@@ -184,17 +188,17 @@
 }
 
 .form-input .form-label {
-  color: #9b9494;
-  font-weight: 500;
+  color: #AAABB1;
+  font-weight: 400;
   font-size: 12px;
 }
 
 .form-input .form-control, .form-input .form-select {
   border: 1px solid #38694B;
   color: #38694B;
-  border-radius: 8px;
+  border-radius: 6px;
   font-size: 14px;
-  padding: .5rem .5rem;
+  padding: .6rem 1rem;
 }
 
 .form-input .form-control:focus, .form-input .form-select:focus {
@@ -212,5 +216,26 @@
 
 .card.item-card {
   border: 1px solid #d3cece;
+}
+
+.wrapper-table table {
+  width: 100%;
+}
+
+.wrapper-table table tbody tr td {
+  color: #001845;
+  font-weight: 300;
+  padding: .2rem 0;
+}
+
+.wrapper-table table tbody tr td .text-primary {
+  color: #3f895b !important;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 567px) {
+  .wrapper-table table tbody tr td {
+    font-size: 12px;
+  }
 }
 /*# sourceMappingURL=app.css.map */

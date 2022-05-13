@@ -8,6 +8,7 @@
     box-sizing: border-box;
 }
 body {
+    background-color: #F6F8FD;
 }
 
 .navbar {
@@ -138,16 +139,16 @@ body {
 .form-input {
     margin-bottom: 1rem;
     .form-label {
-        color: rgb(155, 148, 148);
-        font-weight: 500;
+        color: #AAABB1;
+        font-weight: 400;
         font-size: 12px;
     }
     .form-control,.form-select {
         border: 1px solid #38694B;
         color: #38694B;
-        border-radius: 8px;
+        border-radius: 6px;
         font-size: 14px;
-        padding: .5rem .5rem;
+        padding: .6rem 1rem;
         &:focus {
             box-shadow: none;
         }
@@ -160,5 +161,37 @@ body {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
     &.item-card {
         border: 1px solid rgb(211, 206, 206);
+    }
+}
+.wrapper-table {
+    table {
+        width: 100%;
+        tbody {
+            tr {
+                td {
+                    color: #001845;
+                    font-weight: 300;
+                    padding: .2rem 0;
+                    .text-primary {
+                        color: #3f895b !important;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 567px) {
+    .wrapper-table {
+        table {
+            tbody {
+                tr {
+                    td {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
     }
 }

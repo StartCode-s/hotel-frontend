@@ -119,7 +119,7 @@ input[type="radio"]:checked{
                 }
             }
             .text-menu {
-                color: rgb(155, 148, 148);
+                color: #AAABB1;
                 font-weight: 400;
                 font-size: 12px;
                 margin: 20px 0 8px 0;
@@ -202,5 +202,17 @@ input[type="radio"]:checked{
                 }
             }
         }
+    }
+}
+
+.status {
+    border-radius: 6px;
+    padding: 4px 8px;
+    width: fit-content;
+    font-size: 14px;
+    &.success-status  {
+        background-color: rgb(28, 139, 22);
+        color: #fff;
+        font-weight: 500;
     }
 }

@@ -166,7 +166,7 @@ input[type="radio"]:checked {
 }
 
 .sidebar-container .sidebar-wrapper .sidebar-menu .text-menu {
-  color: #9b9494;
+  color: #AAABB1;
   font-weight: 400;
   font-size: 12px;
   margin: 20px 0 8px 0;
@@ -250,5 +250,20 @@ input[type="radio"]:checked {
   .wrapper-table table tbody tr td {
     font-size: 12px;
   }
+}
+
+.status {
+  border-radius: 6px;
+  padding: 4px 8px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 14px;
+}
+
+.status.success-status {
+  background-color: #1c8b16;
+  color: #fff;
+  font-weight: 500;
 }
 /*# sourceMappingURL=app.css.map */

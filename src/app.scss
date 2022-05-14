@@ -10,6 +10,16 @@
 body {
     background-color: #F6F8FD;
 }
+input[type="checkbox"]:checked{
+  border: 1px solid #3f895b;
+  background-color: #3f895b;
+  box-shadow: none;
+}
+input[type="radio"]:checked{
+    border: 1px solid #3f895b;
+    background-color: #3f895b;
+    box-shadow: none;
+}
 
 .navbar {
     width: 100%;
@@ -124,11 +134,11 @@ body {
     border-radius: 10px;
     font-weight: 600;
     &.button-primary {
-        background-color: #3f895b;
+        background-color: rgb(47, 70, 110);
         color: #fff;
         transition: .3s ease;
         &:hover {
-            background-color: #396a4c;
+            background-color: rgb(41, 61, 95);
             transition: .3s ease;
         }
     }
@@ -144,8 +154,8 @@ body {
         font-size: 12px;
     }
     .form-control,.form-select {
-        border: 1px solid #38694B;
-        color: #38694B;
+        border: 2px solid #001845;
+        color: #001845;
         border-radius: 6px;
         font-size: 14px;
         padding: .6rem 1rem;
@@ -170,8 +180,7 @@ body {
             tr {
                 td {
                     color: #001845;
-                    font-weight: 300;
-                    padding: .2rem 0;
+                    font-weight: 400;
                     .text-primary {
                         color: #3f895b !important;
                         font-weight: 600;

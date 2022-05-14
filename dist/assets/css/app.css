@@ -11,6 +11,20 @@ body {
   background-color: #F6F8FD;
 }
 
+input[type="checkbox"]:checked {
+  border: 1px solid #3f895b;
+  background-color: #3f895b;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+input[type="radio"]:checked {
+  border: 1px solid #3f895b;
+  background-color: #3f895b;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .navbar {
   width: 100%;
   background-color: #fff !important;
@@ -167,14 +181,14 @@ body {
 }
 
 .button.button-primary {
-  background-color: #3f895b;
+  background-color: #2f466e;
   color: #fff;
   -webkit-transition: .3s ease;
   transition: .3s ease;
 }
 
 .button.button-primary:hover {
-  background-color: #396a4c;
+  background-color: #293d5f;
   -webkit-transition: .3s ease;
   transition: .3s ease;
 }
@@ -194,8 +208,8 @@ body {
 }
 
 .form-input .form-control, .form-input .form-select {
-  border: 1px solid #38694B;
-  color: #38694B;
+  border: 2px solid #001845;
+  color: #001845;
   border-radius: 6px;
   font-size: 14px;
   padding: .6rem 1rem;
@@ -224,8 +238,7 @@ body {
 
 .wrapper-table table tbody tr td {
   color: #001845;
-  font-weight: 300;
-  padding: .2rem 0;
+  font-weight: 400;
 }
 
 .wrapper-table table tbody tr td .text-primary {

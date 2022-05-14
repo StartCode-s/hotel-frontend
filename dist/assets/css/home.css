@@ -8,7 +8,7 @@
 }
 
 #home {
-  background: url(/dist/assets/images/background.jpg);
+  background: url(/dist/assets/images/home-background.jpg);
   min-height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -58,7 +58,7 @@
 
 #home .home-content .card .sign-account .d-flex a {
   text-decoration: none;
-  color: #38694B;
+  color: #001845;
   font-weight: 600;
   font-size: 14px;
 }

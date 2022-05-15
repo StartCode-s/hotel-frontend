@@ -129,132 +129,86 @@
                     <div class="col-8">
                         <div class="row">
                             <div class="col-4">
-                                <a href="#" class="card card-items">
+                                <div class="card card-items">
                                     <div class="image-room">
                                         <img src="./assets/images/room-images.jpg" alt="">
                                     </div>
                                     <div class="detail-room">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <h5 class="name-room">Delux Premium</h5>
-                                            <div class="rating">
-                                                <ion-icon name="star"></ion-icon>
-                                                4.5
-                                            </div>
-                                        </div>
+                                        <h5 class="name-room">Delux Premium</h5>
                                         <div class="d-flex price">
                                             <p class="price-room">Rp 500.000</p>
                                             <p>/Night</p>
                                         </div>
                                     </div>
                                     <button class="button button-primary button-small mt-3">Book Hotel</button>
-                                </a>
-                            </div>
-                            <div class="col-4">
-                                <a href="#" class="card card-items">
-                                    <div class="image-room">
-                                        <img src="./assets/images/room-images.jpg" alt="">
-                                    </div>
-                                    <div class="detail-room">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <h5 class="name-room">Delux Premium</h5>
-                                            <div class="rating">
-                                                <ion-icon name="star"></ion-icon>
-                                                4.5
+                                    <button type="button" class="detail-room-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        Detail Room
+                                    </button>
+
+                                    <div class="modal fade detail-room" id="exampleModal" tabindex="-1" aria-labelledby="detail-Room" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                             </div>
-                                        </div>
-                                        <div class="d-flex price">
-                                            <p class="price-room">Rp 500.000</p>
-                                            <p>/Night</p>
-                                        </div>
-                                    </div>
-                                    <button class="button button-primary button-small mt-3">Book Hotel</button>
-                                </a>
-                            </div>
-                            <div class="col-4">
-                                <a href="#" class="card card-items">
-                                    <div class="image-room">
-                                        <img src="./assets/images/room-images.jpg" alt="">
-                                    </div>
-                                    <div class="detail-room">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <h5 class="name-room">Delux Premium</h5>
-                                            <div class="rating">
-                                                <ion-icon name="star"></ion-icon>
-                                                4.5
+                                            <div class="modal-body">
+                                                <div class="detail-room-wrapper">
+                                                    <div class="images-room d-flex justify-content-center">
+                                                        <img src="./assets/images/room-images.jpg" alt="">
+                                                    </div>
+                                                    <h1 class="name-room">Deluxe Premium Room</h1>
+                                                    <p class="alamat">JL Pisang mas 4 blok c2 nomor 1 Kab Bogor Kecamatan Sumur Batu</p>
+                                                    
+                                                    <div class="wrapper-tabs">
+                                                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                            <button class="nav-link active" id="nav-deskripsi-tab" data-bs-toggle="tab" data-bs-target="#nav-deskripsi" type="button" role="tab" aria-controls="nav-deskripsi" aria-selected="true">Description</button>
+                                                            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
+                                                        </div>
+                                                        <div class="tab-content" id="nav-tabContent">
+                                                            <div class="tab-pane fade show active" id="nav-deskripsi" role="tabpanel" aria-labelledby="nav-deskripsi-tab" tabindex="0">The startcode hotel provides the best experience in each of your lodgings, provides the best service and also has very complete facilities</div>
+                                                            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+                                                                Call Center : +6281290053372
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                      
+
+                                                    <div class="room-features">
+                                                        <h5>Room Features</h5>
+                                                        <div class="wrapper-room-features">
+                                                            <div class="feature d-flex align-items-center">
+                                                                <div class="icon">
+                                                                    <ion-icon name="wifi-outline"></ion-icon>
+                                                                </div>
+                                                                <p>Wi-Fi</p>
+                                                            </div>
+                                                            <div class="feature d-flex align-items-center">
+                                                                <div class="icon">
+                                                                    <ion-icon name="bed-outline"></ion-icon>
+                                                                </div>
+                                                                <p>King Bed</p>
+                                                            </div>
+                                                            <div class="feature d-flex align-items-center">
+                                                                <div class="icon">
+                                                                    <ion-icon name="thermometer-outline"></ion-icon>
+                                                                </div>
+                                                                <p>AC</p>
+                                                            </div>
+                                                            <div class="feature d-flex align-items-center">
+                                                                <div class="icon">
+                                                                    <ion-icon name="fast-food-outline"></ion-icon>
+                                                                </div>
+                                                                <p>Breakfast</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="d-flex price">
-                                            <p class="price-room">Rp 500.000</p>
-                                            <p>/Night</p>
+                                          </div>
                                         </div>
                                     </div>
-                                    <button class="button button-primary button-small mt-3">Book Hotel</button>
-                                </a>
+                                </div>
                             </div>
-                            <div class="col-4">
-                                <a href="#" class="card card-items">
-                                    <div class="image-room">
-                                        <img src="./assets/images/room-images.jpg" alt="">
-                                    </div>
-                                    <div class="detail-room">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <h5 class="name-room">Delux Premium</h5>
-                                            <div class="rating">
-                                                <ion-icon name="star"></ion-icon>
-                                                4.5
-                                            </div>
-                                        </div>
-                                        <div class="d-flex price">
-                                            <p class="price-room">Rp 500.000</p>
-                                            <p>/Night</p>
-                                        </div>
-                                    </div>
-                                    <button class="button button-primary button-small mt-3">Book Hotel</button>
-                                </a>
-                            </div>
-                            <div class="col-4">
-                                <a href="#" class="card card-items">
-                                    <div class="image-room">
-                                        <img src="./assets/images/room-images.jpg" alt="">
-                                    </div>
-                                    <div class="detail-room">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <h5 class="name-room">Delux Premium</h5>
-                                            <div class="rating">
-                                                <ion-icon name="star"></ion-icon>
-                                                4.5
-                                            </div>
-                                        </div>
-                                        <div class="d-flex price">
-                                            <p class="price-room">Rp 500.000</p>
-                                            <p>/Night</p>
-                                        </div>
-                                    </div>
-                                    <button class="button button-primary button-small mt-3">Book Hotel</button>
-                                </a>
-                            </div>
-                            <div class="col-4">
-                                <a href="#" class="card card-items">
-                                    <div class="image-room">
-                                        <img src="./assets/images/room-images.jpg" alt="">
-                                    </div>
-                                    <div class="detail-room">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <h5 class="name-room">Delux Premium</h5>
-                                            <div class="rating">
-                                                <ion-icon name="star"></ion-icon>
-                                                4.5
-                                            </div>
-                                        </div>
-                                        <div class="d-flex price">
-                                            <p class="price-room">Rp 500.000</p>
-                                            <p>/Night</p>
-                                        </div>
-                                    </div>
-                                    <button class="button button-primary button-small mt-3">Book Hotel</button>
-                                </a>
-                            </div>
-                            
                         </div>
                     </div>
                 </div>

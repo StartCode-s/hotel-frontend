@@ -210,9 +210,42 @@ input[type="radio"]:checked{
     padding: 4px 8px;
     width: fit-content;
     font-size: 14px;
+    text-align: center;
+    position: relative;
+    display: inline-flex;
+    -moz-box-align: center;
+    font-weight: 500;
+    align-items: center;
     &.success-status  {
         background-color: rgb(28, 139, 22);
         color: #fff;
-        font-weight: 500;
+    }
+}
+.alert {
+    border-radius: 6px;
+    padding: 4px 8px;
+    width: fit-content;
+    font-size: 14px;
+    text-align: center;
+    position: relative;
+    display: inline-flex;
+    -moz-box-align: center;
+    font-weight: 500;
+    align-items: center;
+    &.success-alert  {
+        background-color: #EBF9F4;
+        color: #1a984a;
+    }
+    &.pending-alert {
+        background-color: #FFF7E6;
+        color: #FFB10A;
+    }
+    &.primary-alert {
+        background-color: #F2F4F8;
+        color: #001845;
+    }
+    &.danger-alert {
+        background-color: #FDF4F6;
+        color: #df4d70;
     }
 }

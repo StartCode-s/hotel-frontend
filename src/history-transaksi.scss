@@ -1,0 +1,113 @@
+.title {
+    font-weight: 600;
+    font-size: 28px;
+    color: #001845;
+}
+/*Component Table*/
+.wrapperTable {
+    padding: 2rem 0;
+    .pagination {
+        margin-top: 20rem;
+        .paginate_button {
+            &.active {
+                .page-link {
+                    background: rgb(47, 70, 110) !important;
+                    color: #fff;
+                    border-radius: 6px;
+                }
+            }
+            .page-link {
+                border: none;
+                background: transparent !important;
+                color: rgb(47, 70, 110);
+                padding: .2rem .8rem;
+                font-weight: 300;
+            }
+        }
+    }
+    .tables {
+        border-spacing: 0 10px !important;
+        width: 100%;
+        max-width: 100%;
+        thead {
+            tr {
+                box-shadow: 0px 36px 80px rgba(0, 0, 0, 0.02), 0px 4.50776px 10.0172px rgba(0, 0, 0, 0.04);
+                th {
+                    color: rgb(47, 70, 110);
+                    font-weight: 500;
+                    vertical-align: middle;
+                    padding: .8rem;
+                    background-color: #fff;
+
+                    &:first-child {
+                        -moz-border-radius: 10px 0px 0px 10px !important;
+                        -webkit-border-radius: 10px 0px 0px 10px !important;
+
+                    }
+                    &:last-child {
+                        -webkit-border-radius: 0px 10px 10px 0px !important;
+                        -moz-border-radius: 0px 10px 10px 0px !important;
+                    }
+                }
+            }
+        }
+        tbody {
+            tr {
+                &:last-child {
+                    box-shadow: 0px 36px 80px rgba(0, 0, 0, 0.02), 0px 4.50776px 10.0172px rgba(0, 0, 0, 0.04);
+                }
+                td {
+                    color: rgb(47, 70, 110);
+                    font-weight: 300;
+                    vertical-align: middle;
+                    height: 100%;
+                    padding: .8rem;
+                    background-color: #fff;
+                    font-size: 16px;
+
+                    &:first-child {
+                        -moz-border-radius: 10px 0px 0px 10px !important;
+                        -webkit-border-radius: 10px 0px 0px 10px !important;
+
+                    }
+                    &:last-child {
+                        -webkit-border-radius: 0px 10px 10px 0px !important;
+                        -moz-border-radius: 0px 10px 10px 0px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width :768px) {
+    .dataTables_length {
+        margin-bottom: .5rem;
+        font-size: 12px;
+    }
+    .dataTables_wrapper {
+        .dataTables_filter {
+            font-size: 12px;
+        }
+    }
+    .form-select,.form-control {
+        font-size: 12px;
+    }
+    .wrapperTable {
+        .tables {
+            thead {
+                tr {
+                    th {
+                        font-size: 12px;
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    td {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startcode Hotel</title>
+
+    <!--Botstrap Assets-->
+    <link rel="stylesheet" href="./assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.4/css/dataTables.bootstrap5.min.css">
+    <!--Public css-->
+    <link rel="stylesheet" href="./assets/css/app.css">
+    <!--History Transaksi css-->
+    <link rel="stylesheet" href="./assets/css/history-transaksi.css">
+</head>
+<body>
+
+    <div id="main">
+        <nav class="navbar navbar-light bg-light">
+            <div class="container">
+                <div class="navbar-wrapper d-flex align-items-center w-100">
+                    <div class="sidebar-button d-flex align-items-center">
+                        <ion-icon name="reorder-three"></ion-icon>
+                    </div>
+                    <div class="brand-section d-flex justify-content-center w-100">
+                        <a class="navbar-brand" href="#">
+                            <img src="./assets/images/green-brand-logo.png" alt="">
+                            Startcode Hotel
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="sidebar-container">
+            <div class="sidebar-wrapper">
+                <div class="close-button">
+                    <ion-icon name="close"></ion-icon>
+                </div>
+                <div class="brand-logo">
+                    <img src="./assets/images/green-brand-logo.png" alt="">
+                    <h5>Startcode Hotel</h5>
+                </div>
+                <div class="sidebar-menu">
+                    <p class="text-menu">User Menu</p>
+                    <a href="#" class="sidebar-link">
+                        <img src="./assets/images/icon/booking.png" alt="">
+                        Booking Room
+                    </a>
+                    <a href="#" class="sidebar-link">
+                        <img src="./assets/images/icon/calendar.png" alt="">
+                        History
+                    </a>
+                    <p class="text-menu">Hotel Menu</p>
+                    <a href="#" class="sidebar-link">
+                        <img src="./assets/images/icon/buildings.png" alt="">
+                        Fasilitas Hotel
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content mt-5">
+            <div class="container ">
+                <h1 class="title">History Transaksi</h1>
+                <div class="wrapperTable table-responsive">
+                    <table id="lasRequest" class="tables" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>ID Booking</th>
+                                <th>Payment Methode</th>
+                                <th>Type Hotel</th>
+                                <th>Guest Name</th>
+                                <th>Date Transaction</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td><span class="status success-status">#8912891723981</span></td>
+                                <td>BCA</td>
+                                <td>Deluxe Room</td>
+                                <td>M Alfito Rahman</td>
+                                <td>21 April 2021</td>
+                                <td><span class="alert danger-alert">Canceled</span></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td><span class="status success-status">#8912891723981</span></td>
+                                <td>BCA</td>
+                                <td>Deluxe Room</td>
+                                <td>M Alfito Rahman</td>
+                                <td>21 April 2021</td>
+                                <td><span class="alert pending-alert">Waiting Check-in</span></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td><span class="status success-status">#8912891723981</span></td>
+                                <td>BCA</td>
+                                <td>Deluxe Room</td>
+                                <td>M Alfito Rahman</td>
+                                <td>21 April 2021</td>
+                                <td><span class="alert primary-alert">Check-in</span></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td><span class="status success-status">#8912891723981</span></td>
+                                <td>BCA</td>
+                                <td>Deluxe Room</td>
+                                <td>M Alfito Rahman</td>
+                                <td>21 April 2021</td>
+                                <td><span class="alert success-alert">Success</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--Bundle JS Bootstrap-->
+    <script src="./assets/vendor/jquery/jquery.min.js"></script>
+    <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!--Datatable By Bootstrap-->
+    <script src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.4/js/dataTables.bootstrap5.min.js"></script>
+
+    <!--Ion Icon-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="./assets/js/index.js"></script>
+
+
+    <script>
+        $(document).ready( function () {
+            $('#lasRequest').DataTable({
+                "bInfo": false,
+            });
+        } );
+    </script>
+
+</body>
+</html>

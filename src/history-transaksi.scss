@@ -79,7 +79,7 @@
         }
     }
 }
-@media screen and (max-width :768px) {
+@media screen and (max-width :576px) {
     .dataTables_length {
         margin-bottom: .5rem;
         font-size: 12px;
@@ -105,6 +105,9 @@
                 tr {
                     td {
                         font-size: 12px;
+                        .alert {
+                            font-size: 12px;
+                        }
                     }
                 }
             }

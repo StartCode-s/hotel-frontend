@@ -81,7 +81,7 @@
   -moz-border-radius: 0px 10px 10px 0px !important;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 576px) {
   .dataTables_length {
     margin-bottom: .5rem;
     font-size: 12px;
@@ -96,6 +96,9 @@
     font-size: 12px;
   }
   .wrapperTable .tables tbody tr td {
+    font-size: 12px;
+  }
+  .wrapperTable .tables tbody tr td .alert {
     font-size: 12px;
   }
 }

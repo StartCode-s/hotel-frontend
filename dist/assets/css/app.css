@@ -279,6 +279,7 @@ input[type="radio"]:checked {
 .alert {
   border-radius: 6px;
   padding: 4px 8px;
+  margin: 0;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
